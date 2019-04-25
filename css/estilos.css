@@ -9,32 +9,36 @@
 }
 
 a:link{ text-decoration: none; }
+a:hover{ color: initial; }
 
 /*===========================================================
-                PARTE SUPERIOR DEL HEADER
+                        PAGINA PRINCIPAL
+============================================================*/
+
+/*                  PARTE SUPERIOR DEL HEADER
 ============================================================*/
 #supe-header {
-    background: rgba(200, 200, 0, 0.5);
+    background: #0432a0;
     padding-left: 9.375rem;
     height: 3.75rem;
 }
 
-.izq{ float: left; background: rgba(0, 0, 200, .5) }
+.izq{ float: left; }
 
 #supe-header .izq ul{ display: flex; margin-bottom: 0; }
 
 #supe-header .izq ul li{ padding: .5rem; }
 
-#supe-header .izq ul li a{ font-size: 1.85rem; color: #2cb999; }
+#supe-header .izq ul li a{ font-size: 1.85rem; color: #0bcacc; }
 
 #supe-header .izq ul li a:hover{ color: #fff; }
 
 #supe-header .der{ float: right; background: rgba(200, 0, 200, .5) }
-/*===========================================================
-                    MENU DESPLEGABLE
+
+/*                      MENU DESPLEGABLE
 ============================================================*/
 #tope{
-    background: rgba(200, 0, 0, 0.5);
+    background: rgb(26, 25, 29);
     height: 100%;
     position: fixed;
     top: 0;
@@ -44,14 +48,12 @@ a:link{ text-decoration: none; }
 }
 
 #tope a img{
-    width: 6.25rem;
-    height: 6.875rem;
+    width: 6.5rem;
+    height: 5.875rem;
     margin: .9375rem 0.75rem 1.25rem;
 }
 
-#tope .pantalla-buscador nav #menu-principal li{
-    transform: skew(0deg,-10deg);
-}
+#tope .pantalla-buscador nav #menu-principal li{ transform: skew(0deg,-10deg); }
 
 #tope .pantalla-buscador nav #menu-principal a li{
     color: #fff;
@@ -60,7 +62,7 @@ a:link{ text-decoration: none; }
     font-size: 1.0625rem;
     text-transform: uppercase;
     letter-spacing: -1px;
-    background: rgba(0, 0, 200, .5);
+    background: rgb(65, 65, 65);
 }
 
 #tope .pantalla-buscador nav #menu-principal a li:hover{
@@ -69,8 +71,7 @@ a:link{ text-decoration: none; }
     padding: 1rem 0;
 }
 
-/*===========================================================
-                        CABEZOTE
+/*                         CABEZOTE
 ============================================================*/
 .site-branding .toogle-menu { display: none; }
 
@@ -93,35 +94,15 @@ nav#site-nav{ background: rgba(0, 200, 0, .5) }
     font-weight: inherit;
 }
 
-.zona1{ min-height: 100vh; background: rgba(200, 200, 50, 0.5); padding-bottom: .1rem; }
+.casilla { display: flex; justify-content: space-between; }
 
-.zona1 h1{ 
-    font-size: 4rem;
-    padding: 3rem;
-    color: #a443e4;
-}
-
-.zona1 .list-grid-item h3{ color: #fff; font-size: 3rem; }
-
-.list-grid { display: flex; justify-content: space-between; }
-
-.zona1 .list-grid { justify-content: space-around; }
-
-.zona1 .list-grid-item{
+.casilla-item{
     width: 24rem;
     height: 27rem;
     background: rgba(100, 50, 100, .5);
     padding: 1rem;
     margin-bottom: 3rem;
 }
-
-.zona2{ min-height: 100vh; background: rgba(200, 50, 62, 0.5); }
-
-.zona3{ min-height: 100vh; background: rgba(50, 200, 187, 0.5); }
-
-.zona4{ min-height: 100vh; background: rgba(200, 50, 250, 0.5); padding: 9.375rem 0;  }
-
-.zona4 h1{ font-size: 5rem; color: #fff; }
 
 a.test {
     display: block;
@@ -135,16 +116,90 @@ a.test {
     text-align: center;
 }
 
-.zona4 .bot p{
-    font-family: brandon_grotesquemedium;
+.sector1, .sector3{
+    position: relative;
+    padding-bottom: 9.375rem;
+    background: url(../img/b4.jpg) no-repeat;
+    background-size: cover;
+}
+
+/*.sector1{ min-height: 100vh; background: rgba(200, 200, 50, 0.5); padding-bottom: .1rem; }*/
+
+.sector1 h1{ font-size: 4rem; padding: 3rem; color: #0432a0; }
+
+.sector1 .casilla-item h3{ color: #fff; font-size: 3rem; }
+
+.sector1 .casilla { justify-content: space-around; }
+
+.sector1 .sportm{
+    background: url(../img/sporm.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.sector1 .crossm{
+    background: url(../img/crossm.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.sector2{ min-height: 100vh; background: rgba(200, 50, 62, 0.5); }
+
+/*.sector3{ min-height: 100vh; background: rgba(50, 200, 187, 0.5); }*/
+
+/*.sector3 {
+    z-index: 1;
+    display: block;
+    margin-top: -50px;
+    width: 100%;
+     background: url(https://tacobell.es/wp-content/uploads/2018/02/fondo-piedra-min.jpg) no-repeat; 
+    background-size: cover;
+     transform: skew(0deg,5deg); 
+    -ms-transform: skew(0deg,5deg);
+    -webkit-transform: skew(0deg,2deg);
+    z-index: 888;
+}*/
+
+.sector3 h1{ font-size: 4rem; padding: 3rem; color: #a443e4; }
+
+.sector3 .medio {
+    justify-content: center;
+    display: flex;
+    width: 50%;
+    padding: 0rem 0;
+    align-items: center;
+}
+
+.sector3 .casilla-item{ height: 35rem; margin-bottom: 5rem; background: #fff; }
+
+.sector3 .casilla-item h3, a{ color: black; font-size: 3rem; }
+
+.sector3 .casilla { justify-content: space-around; }
+
+.sector3 .casilla p{ text-align: center; font-size: 1.5rem; }
+
+.sector3 .casilla a.test{ margin: 0 auto; }
+
+.sector4{ min-height: 100vh; background: rgba(200, 50, 250, 0.5); padding: 9.375rem 0;  }
+
+.sector4{
+    background: url(../img/backgroundos.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.sector4 h1{ font-size: 5rem; color: #fff; }
+
+.sector4 .bot p{
+    font-family: grotesco;
     color: #fff;
     text-align: center;
     font-size: 1.5rem;
 }
 
-.zona5{ background: rgba(55, 200, 50, 0.5); display: flex; justify-content: space-around; }
+.sector5{ background: rgba(55, 200, 50, 0.5); display: flex; justify-content: space-around; }
 
-.zona5 .medio {
+.sector5 .medio {
     justify-content: center;
     display: flex;
     width: 50%;
@@ -152,18 +207,218 @@ a.test {
     align-items: center;
 }
 
-.zona5 a h3{ color: #fff; font-size: 3rem; }
+.sector5 .medio.izquierda{
+    background: url(../img/fraos.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
 
-/*===========================================================
-                        FOOTER
+.sector5 .medio.derecha{
+    background: url(../img/emos.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.sector5 a h3{ color: #fff; font-size: 3rem; }
+
+/*                          FOOTER
 ============================================================*/
 footer{
     padding-left: 7.75rem;
-    background: rgba(100, 50, 100, .5);
+    /*background: rgba(100, 50, 100, .5);*/
+    background: #fff;
     height: 45vh;
 }
 
 footer p{ 
     color: gray;
     text-align: center;
+    font-family: grotesco;
+    font-weight: bold;
 }
+
+footer ul{ display: inline-flex; text-align: center; }
+
+footer ul li{ padding: 0rem 1.5rem; }
+
+footer ul li a{ font-size: 1.2rem; }
+
+footer ul#menu1-footer{ padding: 5rem 0 2.5rem;}
+
+footer ul#menu2-footer{ margin-bottom: 3rem; }
+
+footer ul#menu2-footer li a{
+    font-family: grotesco;
+    color: #09927a;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/*===========================================================
+                    QUIÉNES SOMOS-PRINCIPAL
+============================================================*/
+.tituloQS, .tituloQSH, .tituloQSV, .tituloPP{
+    padding-left: 7.75rem;
+    background: rgba(200, 0, 0, 0.5);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 86%, 0% 100%);
+    height: 60vh;
+}
+
+.tituloQS h1, .tituloQSH h1, .tituloQSV h1, .tituloF h1, .tituloPP h1{
+    font-size: 3.75rem;
+    line-height: 5rem;
+    color: #fff;
+    text-align: right;
+    margin-top: 6.25rem;
+    padding-bottom: 6.25rem;
+    transform: skew(0deg,-4deg);
+    display: inline-block;
+    max-width: 22.5rem;
+}
+
+.contQS, .contQSH, .contQSV{
+    padding-left: 7.75rem;
+    /*background: rgba(200, 200, 0, 0.5);*/
+    height: 100vh;
+}
+
+.contQS .casilla-item{
+    width: 35%;
+    height: 0;
+    margin: 0rem 3rem;
+}
+
+.contQS article h3{
+    font-size: 2.8rem;
+    margin-bottom: 1.8rem;
+    text-decoration: underline;
+    text-decoration-color: #2cb999;
+    line-height: 3.8rem;
+}
+
+.contQS article p, .contQSH article p, .contQSV article p, .contPp article p{
+    font-family: sans-serif;
+    text-align: justify;
+    font-size: .95rem;
+    margin-bottom: 5rem;
+}
+
+.contQS article a, .contQSH article a, .contQSV article a{ color: #1e776c; font-size: 8rem; }
+
+/*                   QUIÉNES SOMOS-HISTORIA
+============================================================*/
+.contQSH article h3{
+    transform: none;
+    font-size: 2.5rem;
+    padding: 2rem 0rem;
+    text-align: left;
+    color: #1e776c;
+}
+
+.contQSH article .log{ text-align: right; }
+
+.contQSH article i{ color: #1e776c; font-size: 8rem; }
+
+/*                   QUIÉNES SOMOS-VALORES
+============================================================*/
+.contQSV article h3{
+    transform: none;
+    font-size: 2.5rem;
+    padding: 2rem 0rem;
+    text-align: left;
+    color: #1e776c;
+}
+
+.contQSV article .log{ text-align: right; }
+
+.contQSV article i{ color: #1e776c; font-size: 8rem; }
+
+/*===========================================================
+                        FRANQUICIAS
+============================================================*/
+.tituloF{
+    padding-left: 7.75rem;
+    background: rgba(200, 0, 0, 0.5);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 86%, 0% 100%);
+    height: 75vh;
+    margin-bottom: 6rem;
+}
+
+.contF{ padding-left: 7.75rem; /*background: rgba(200, 200, 0, 0.5);*/ }
+
+.contF .cajaTitulo h1{
+    text-align: Center;
+    color: #fff;
+    font-size: 3.75rem;
+    padding: 4.375rem 1.25rem;
+    background: linear-gradient(45deg,#0b1b1b 0%,#04886a 100%);
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#038080',endColorstr='#34c7a6',GradientType=1 );*/
+    clip-path: polygon(0 0,100% 0,100% 86%,0% 100%);
+}
+
+.contF .texto{ padding: 3.125rem 5rem; }
+
+.contF .texto p{ font-family: sans-serif; font-size: 1.125rem; }
+
+.contF .texto ul li{
+    margin-top: 1.875rem;
+    padding-left: 1.875rem;
+    position: relative;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    color: #2e2e2e;
+}
+
+.contF .texto ul li:before {
+    content: "\2022";
+    position: absolute;
+    top: 0;
+    left: 0.625rem;
+    font-size: 1rem;
+}
+
+.contF .texto ul li div{ font-family: sans-serif; }
+
+.contF .cajaTitulo2{
+    text-align: Center;
+    color: #fff;
+    font-size: 3.75rem;
+    padding: 4.375rem 1.25rem;
+    background: linear-gradient(45deg,#0b1b1b 0%,#04886a 100%);
+    clip-path: polygon(0 14%,100% 0,100% 86%,0% 100%);
+}
+
+.contF .cajaTitulo2 h1{ line-height: 3.6rem; }
+
+.contF .cajaTitulo2 p{
+    font-size: 1.2rem;
+    font-family: frabk;
+    font-weight: bold;
+}
+
+.contF .enviar {
+    text-align: Center;
+    color: #fff;
+    display: block;
+    margin-top: 40px;
+    padding: 20px 0;
+    font-size: 40px;
+    font-family: grotesco;
+    background: linear-gradient(45deg,#0b1b1b 0%,#04886a 100%);
+    clip-path: polygon(0 14%,100% 0,100% 100%,0% 100%);
+}
+
+.contF input[type=submit] {
+    display: inline-block;
+    color: #04886a;
+    background-color: #fff;
+    padding: .3125rem 5rem;
+    border: 0;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    margin: 1.875rem 0rem;
+}
+
+/*===========================================================
+                    POLITICA DE PRIVACIDAD
+============================================================*/

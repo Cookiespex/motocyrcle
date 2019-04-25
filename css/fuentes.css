@@ -7,3 +7,13 @@
     font-family: "Gobold High";
     src: url("goboldhigh.otf");
 }
+
+@font-face{
+    font-family: grotesco;
+    src: url("grotesco.otf")
+}
+
+@font-face{
+    font-family: frabk;
+    src: url("frabk.TTF");
+}
