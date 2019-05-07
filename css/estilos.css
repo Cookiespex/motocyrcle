@@ -18,7 +18,7 @@ a:hover{ color: initial; }
 /*                  PARTE SUPERIOR DEL HEADER
 ============================================================*/
 #supe-header {
-    background: #0432a0;
+    background: #433b7d;
     padding-left: 9.375rem;
     height: 3.75rem;
 }
@@ -66,7 +66,7 @@ a:hover{ color: initial; }
 }
 
 #tope .pantalla-buscador nav #menu-principal a li:hover{
-    color: #ff00ce;
+    color: #5643e4;
     background: #fff;
     padding: 1rem 0;
 }
@@ -112,10 +112,10 @@ a.test {
     font-size: 22px;
     color: #fff;
     margin: 150px auto 40px;
-    background-color: #ff00ce;
+    background-color: #5643e4;
     text-align: center;
 }
-
+/*                  SECTOR 1              */
 .sector1, .sector3{
     position: relative;
     padding-bottom: 9.375rem;
@@ -125,7 +125,7 @@ a.test {
 
 /*.sector1{ min-height: 100vh; background: rgba(200, 200, 50, 0.5); padding-bottom: .1rem; }*/
 
-.sector1 h1{ font-size: 4rem; padding: 3rem; color: #0432a0; }
+.sector1 h1{ font-size: 4rem; padding: 3rem; color: #5643e4; }
 
 .sector1 .casilla-item h3{ color: #fff; font-size: 3rem; }
 
@@ -142,9 +142,9 @@ a.test {
     background-size: cover;
     background-position: center center;
 }
-
-.sector2{ min-height: 100vh; background: rgba(200, 50, 62, 0.5); }
-
+/*                  SECTOR 2             */
+/*.sector2{ min-height: 100vh; background: rgba(200, 50, 62, 0.5); }*/
+/*                  SECTOR 3              */
 /*.sector3{ min-height: 100vh; background: rgba(50, 200, 187, 0.5); }*/
 
 /*.sector3 {
@@ -160,7 +160,7 @@ a.test {
     z-index: 888;
 }*/
 
-.sector3 h1{ font-size: 4rem; padding: 3rem; color: #a443e4; }
+.sector3 h1{ font-size: 4rem; padding: 3rem; color: #5643e4; }
 
 .sector3 .medio {
     justify-content: center;
@@ -179,7 +179,7 @@ a.test {
 .sector3 .casilla p{ text-align: center; font-size: 1.5rem; }
 
 .sector3 .casilla a.test{ margin: 0 auto; }
-
+/*                  SECTOR 4              */
 .sector4{ min-height: 100vh; background: rgba(200, 50, 250, 0.5); padding: 9.375rem 0;  }
 
 .sector4{
@@ -196,7 +196,7 @@ a.test {
     text-align: center;
     font-size: 1.5rem;
 }
-
+/*                  SECTOR 5              */
 .sector5{ background: rgba(55, 200, 50, 0.5); display: flex; justify-content: space-around; }
 
 .sector5 .medio {
@@ -225,7 +225,6 @@ a.test {
 ============================================================*/
 footer{
     padding-left: 7.75rem;
-    /*background: rgba(100, 50, 100, .5);*/
     background: #fff;
     height: 45vh;
 }
@@ -235,6 +234,7 @@ footer p{
     text-align: center;
     font-family: grotesco;
     font-weight: bold;
+    padding-bottom: 4rem;
 }
 
 footer ul{ display: inline-flex; text-align: center; }
@@ -243,28 +243,107 @@ footer ul li{ padding: 0rem 1.5rem; }
 
 footer ul li a{ font-size: 1.2rem; }
 
-footer ul#menu1-footer{ padding: 5rem 0 2.5rem;}
+footer ul#menu1-footer{ padding: 5rem 0 2.5rem; }
+
+footer ul#menu1-footer li a{ text-transform: uppercase; }
 
 footer ul#menu2-footer{ margin-bottom: 3rem; }
 
 footer ul#menu2-footer li a{
     font-family: grotesco;
     color: #09927a;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: bold;
+}
+
+/*================================================================
+    PRODUCTOS SPORT MOTORBIKE - PRODUCTOS CROSS COUNTRY MOTORBIKE
+==================================================================*/
+.contSport .cjPromos .imgPromos, .contCross .cjPromos .imgPromos{ width: 100%; height: 60vh; background: rgba(200, 0, 200, .5); }
+
+.contSport .cjPromos .casilla-item-entrada, .contCross .cjPromos .casilla-item-entrada{ padding: 0rem; }
+
+.contSport .cjPromos, .contCross .cjPromos{ width: 33.3333%; }
+
+.contSport .cjPromos p, .contCross .cjPromos p{
+    font-family: grotesco;
+    color: #5643e4;
+    line-height: 1.2rem;
+    margin-bottom: .5rem;
+    font-weight: bolder; 
+}
+
+/*===========================================================
+        PROMOCIONES PERMANENTES - PROMOCIONES TEMPORALES
+                            CUPONES 
+============================================================*/
+.cassilla{ float: left; }
+
+.cjPromos{ padding: 1.25rem; }
+
+.cjPromos .borde{ border: 1px solid #000; }
+
+.cjPromos .casilla-item-entrada{ padding: 1.25rem; }
+
+.cjPromos .imgPromos{ width: 30rem; height: 70vh; background: rgba(200, 0, 200, .5); }
+
+.cjPromos .titulo{
+    display: block;
+    transform: none;
+    font-size: 1.75rem;
+    line-height: 2rem;
+    padding: .5rem;
+}
+
+.cjPromos .red ul{ display: flex; margin-bottom: 0; }
+
+.cjPromos .red ul li{ padding: 0rem .5rem; }
+
+.cjPromos .red ul li a{ font-size: 1.85rem; color: #0bcacc; }
+
+/*===========================================================
+                            OPINIÓN
+============================================================*/
+.tituloOp{ margin-bottom: 2rem; }
+
+.val{
+    display: flex;
+    padding: 2.5rem;
+    background: linear-gradient(to right,#1d042f 0%,#835ea5 100%);
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#643488',endColorstr='#9071ac',GradientType=1 );*/
+    margin-bottom: 1.875rem;
+    font-size: 1.875rem;
+    color: #fff;
+    text-transform: uppercase;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.val p{ line-height: 1.7em; }
+
+.val a{ font-size: 1.875rem; line-height: 2em; }
+
+.val a:hover{ color: #643488; }
+
+.val a, .val button {
+    display: inline-block;
+    background-color: #fff;
+    color: #47b998;
+    border-radius: 5px;
+    padding: 0 1.25rem;
 }
 
 /*===========================================================
                     QUIÉNES SOMOS-PRINCIPAL
 ============================================================*/
-.tituloQS, .tituloQSH, .tituloQSV, .tituloPP{
+.tituloQS, .tituloQSH, .tituloQSV, .tituloPP, .tituloSDS, .tituloAL, .tituloProper, .tituloTemp, .tituloCupones, .tituloSport, .tituloCross, .tituloOp, .tituloSus{
     padding-left: 7.75rem;
     background: rgba(200, 0, 0, 0.5);
     clip-path: polygon(0% 0%, 100% 0%, 100% 86%, 0% 100%);
     height: 60vh;
 }
 
-.tituloQS h1, .tituloQSH h1, .tituloQSV h1, .tituloF h1, .tituloPP h1{
+.tituloQS h1, .tituloQSH h1, .tituloQSV h1, .tituloF h1, .tituloPP h1, .tituloSDS h1, .tituloAL h1, .tituloProper h1, .tituloTemp h1, .tituloCupones h1, .tituloSport h1, .tituloCross h1, .tituloOp h1, .tituloSus h1{
     font-size: 3.75rem;
     line-height: 5rem;
     color: #fff;
@@ -276,62 +355,40 @@ footer ul#menu2-footer li a{
     max-width: 22.5rem;
 }
 
-.contQS, .contQSH, .contQSV{
-    padding-left: 7.75rem;
-    /*background: rgba(200, 200, 0, 0.5);*/
-    height: 100vh;
-}
+.contQS, .contQSH, .contQSV{  padding-left: 7.75rem; height: 100vh; }
 
-.contQS .casilla-item{
-    width: 35%;
-    height: 0;
-    margin: 0rem 3rem;
-}
+.contQS .casilla-item{ width: 35%; height: 0; margin: 0rem 3rem; }
 
 .contQS article h3{
     font-size: 2.8rem;
     margin-bottom: 1.8rem;
     text-decoration: underline;
-    text-decoration-color: #2cb999;
+    text-decoration-color: #6153ca;
     line-height: 3.8rem;
 }
 
-.contQS article p, .contQSH article p, .contQSV article p, .contPp article p{
-    font-family: sans-serif;
+.contQS article p, .contQSH article p, .contQSV article p, .contPp article p, .contSDS article p, .contAL article p{
+    font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     font-size: .95rem;
     margin-bottom: 5rem;
 }
 
-.contQS article a, .contQSH article a, .contQSV article a{ color: #1e776c; font-size: 8rem; }
+.contQS article a, .contQSH article a, .contQSV article a{ color: #5643e4; font-size: 8rem; }
 
-/*                   QUIÉNES SOMOS-HISTORIA
+/*      QUIÉNES SOMOS-HISTORIA - QUIENES SOMOS-VALORES
 ============================================================*/
-.contQSH article h3{
+.contQSH article h3, .contQSV article h3{
     transform: none;
     font-size: 2.5rem;
     padding: 2rem 0rem;
     text-align: left;
-    color: #1e776c;
+    color: #5643e4;
 }
 
-.contQSH article .log{ text-align: right; }
+.contQSH article .log, .contQSV article .log{ text-align: right; }
 
-.contQSH article i{ color: #1e776c; font-size: 8rem; }
-
-/*                   QUIÉNES SOMOS-VALORES
-============================================================*/
-.contQSV article h3{
-    transform: none;
-    font-size: 2.5rem;
-    padding: 2rem 0rem;
-    text-align: left;
-    color: #1e776c;
-}
-
-.contQSV article .log{ text-align: right; }
-
-.contQSV article i{ color: #1e776c; font-size: 8rem; }
+.contQSH article i, .contQSV article i{ color: #5643e4; font-size: 8rem; }
 
 /*===========================================================
                         FRANQUICIAS
@@ -344,21 +401,21 @@ footer ul#menu2-footer li a{
     margin-bottom: 6rem;
 }
 
-.contF{ padding-left: 7.75rem; /*background: rgba(200, 200, 0, 0.5);*/ }
+.contF{ padding-left: 7.75rem; }
 
 .contF .cajaTitulo h1{
     text-align: Center;
     color: #fff;
     font-size: 3.75rem;
     padding: 4.375rem 1.25rem;
-    background: linear-gradient(45deg,#0b1b1b 0%,#04886a 100%);
+    background: linear-gradient(45deg,#0e0b1b 0%,#6b539a 100%);
     /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#038080',endColorstr='#34c7a6',GradientType=1 );*/
     clip-path: polygon(0 0,100% 0,100% 86%,0% 100%);
 }
 
 .contF .texto{ padding: 3.125rem 5rem; }
 
-.contF .texto p{ font-family: sans-serif; font-size: 1.125rem; }
+.contF .texto p{ font-family: Arial, Helvetica, sans-serif; font-size: 1.125rem; }
 
 .contF .texto ul li{
     margin-top: 1.875rem;
@@ -384,17 +441,13 @@ footer ul#menu2-footer li a{
     color: #fff;
     font-size: 3.75rem;
     padding: 4.375rem 1.25rem;
-    background: linear-gradient(45deg,#0b1b1b 0%,#04886a 100%);
+    background: linear-gradient(45deg,#0e0b1b 0%,#6b539a 100%);
     clip-path: polygon(0 14%,100% 0,100% 86%,0% 100%);
 }
 
 .contF .cajaTitulo2 h1{ line-height: 3.6rem; }
 
-.contF .cajaTitulo2 p{
-    font-size: 1.2rem;
-    font-family: frabk;
-    font-weight: bold;
-}
+.contF .cajaTitulo2 p{ font-size: 1.2rem; font-family: frabk; font-weight: bold; }
 
 .contF .enviar {
     text-align: Center;
@@ -404,13 +457,13 @@ footer ul#menu2-footer li a{
     padding: 20px 0;
     font-size: 40px;
     font-family: grotesco;
-    background: linear-gradient(45deg,#0b1b1b 0%,#04886a 100%);
+    background: linear-gradient(45deg,#0b1b1b 0%,#6b539a 100%);
     clip-path: polygon(0 14%,100% 0,100% 100%,0% 100%);
 }
 
 .contF input[type=submit] {
     display: inline-block;
-    color: #04886a;
+    color: #4d3c72;
     background-color: #fff;
     padding: .3125rem 5rem;
     border: 0;
@@ -420,5 +473,51 @@ footer ul#menu2-footer li a{
 }
 
 /*===========================================================
-                    POLITICA DE PRIVACIDAD
+                        ¡SUSCRIBETE!
 ============================================================*/
+.contSus p{ font-family: Arial, Helvetica, sans-serif; }
+
+.contSus article{ font-size: .8rem; color: gray; }
+
+.contSus article h4#info{
+    transform: none;
+    text-align: left;
+    color: #686868;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contSus article p a{
+    color: #5d1cd8;
+    font-size: .8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contSus article p a:link{ text-decoration: underline; }
+/*===========================================================
+        POLITICA DE PRIVACIDAD - SUS DATOS SEGUROS
+                        AVISO LEGAL
+============================================================*/
+.contPp, .contSDS, .contAL, .contProper, .contTemp, .contCupones, .contSport, .contCross, .contOp, .contSus{ padding-left: 7.75rem; }
+
+.contPp  article h3, .contSDS article h3, .contAL article h3{
+    transform: none;
+    font-size: 2.5rem;
+    padding: 2rem 0rem;
+    text-align: left;
+}
+
+.contPp article p b, .contSDS article p b{ font-family: Arial, Helvetica, sans-serif; font-size: 1.1rem; }
+
+.contAL article p{ margin-bottom: 1rem; }
+
+.contAL article h2{
+    font-family: gobold;
+    text-align: left;
+    color: #5643e4;
+    padding: 30px 0;
+    font-size: 22px;
+    transform: none;
+    margin-top: 0;
+    line-height: 30px;
+}
