@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--Require meta tags-->
     <meta charset="UTF-8">
@@ -9,7 +10,8 @@
     <meta name="author" content="Cookies Pex">
     <link rel="icon" href="img/motorcycle.png">
     <!--Bootstrao CSS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Style sheet-->
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -23,6 +25,7 @@
     <title>¡Suscríbete! - Motorcycle</title>
 
 </head>
+
 <body>
     <div class="header-movil"></div>
 
@@ -31,21 +34,21 @@
             <div class="izq">
                 <ul>
                     <li><a href="https://www.facebook.com/" target="_blank">
-                        <i class="fa fa-facebook-square"></i>
-                    </a></li>
+                            <i class="fa fa-facebook-square"></i>
+                        </a></li>
                     <li><a href="https://www.instagram.com/" target="_blank">
-                        <i class="fa fa-instagram"></i>
-                    </a></li>
+                            <i class="fa fa-instagram"></i>
+                        </a></li>
                     <li><a href="https://www.twitter.com/" target="_blank">
-                        <i class="fa fa-twitter"></i>
-                    </a></li>
+                            <i class="fa fa-twitter"></i>
+                        </a></li>
                 </ul>
             </div>
 
             <div class="der">
                 <script>
                     /*$( function() {
-                        $(".abrir-menu").on("click", function() { 
+                        $(".abrir-menu").on("click", function() {
                             $("body").toggleClass( "menu-desplegado");
                         });
                     });  abrir-menu tiene que ir en li*/
@@ -70,13 +73,27 @@
                         <div class="netgo_navigation" id="netgo_navigation_netgo_navigation-3">
                             <div class="menu-principla-container">
                                 <ul id="menu-principal" class="menu">
-                                    <a href="#"><li>PRODUCTOS</li></a>
-                                    <a href="promosper.html"><li>PROMOCIONES</li></a>
-                                    <a href="opinion.html"><li>OPINIÓN</li></a>
-                                    <a href="quienessomos.html"><li>QUIÉNES SOMOS</li></a>
-                                    <a href="franquincia.html"><li>FRANQUICIAS</li></a>
-                                    <a href="#"><li>EMPLEO</li></a>
-                                    <a href="suscribete.html"><li>¡SUSCRÍBETE!</li></a>
+                                    <a href="#">
+                                        <li>PRODUCTOS</li>
+                                    </a>
+                                    <a href="promosper.html">
+                                        <li>PROMOCIONES</li>
+                                    </a>
+                                    <a href="opinion.html">
+                                        <li>OPINIÓN</li>
+                                    </a>
+                                    <a href="quienessomos.html">
+                                        <li>QUIÉNES SOMOS</li>
+                                    </a>
+                                    <a href="franquincia.html">
+                                        <li>FRANQUICIAS</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>EMPLEO</li>
+                                    </a>
+                                    <a href="suscribete.html">
+                                        <li>¡SUSCRÍBETE!</li>
+                                    </a>
                                 </ul>
                             </div>
                         </div>
@@ -134,62 +151,101 @@
                                 <div role="form">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <span>1</span>
+                                            <span class="num">1</span>
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="">Nombre*:</label>
+                                            <p>
+                                                <span for="" class="titlabel">Nombre*:</span>
+                                                <span class="form-control">
+                                                    <input type="text" class="form-control-inp">
+                                                </span>
+                                            </p>
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="">Apellidos*:</label>
+                                            <p>
+                                                <span for="" class="titlabel">Apellidos*:</span>
+                                                <span class="form-control">
+                                                    <input type="text" class="form-control-inp">
+                                                </span>
+                                            </p>
                                         </div>
                                         <div class="col-md-12">
-                                            <span>2</span>
+                                            <span class="num">2</span>
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="">Email*:</label>
+                                            <p>
+                                                <span for="" class="titlabel">Email*:</span>
+                                                <span class="form-control">
+                                                    <input type="email" class="form-control-inp">
+                                                </span>
+                                            </p>
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="">Móvil*:</label>
+                                            <p>
+                                                <span for="" class="titlabel">Móvil*:</span>
+                                                <span class="form-control barr">
+                                                    <input type="tel" class="form-control-inp">
+                                                </span>
+                                            </p>
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="">Fecha de Nacimiento*:</label>
+                                            <p>
+                                                <span for="" class="titlabel">Fecha de Nacimiento*:</span>
+                                                <span class="form-control barr">
+                                                    <input type="text" class="form-control-inp"
+                                                        pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))"
+                                                        title="(AAAA-MM-DD)">
+                                                </span>
+                                            </p>
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="">Cp*:</label>
+                                            <p>
+                                                <span for="" class="titlabel">Cp*:</span>
+                                                <span class="form-control barr">
+                                                    <input type="text" class="form-control-inp ">
+                                                </span>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                                 <hr>
                                 <article>
-                                    <h4 id="info">INFORMACIÓN BÁSICA SOBRE PROTECCIÓN DE DATOS</h4>
+                                    <h4 class="infor">INFORMACIÓN BÁSICA SOBRE PROTECCIÓN DE DATOS</h4>
                                     <p>
-                                        Responsable del tratamiento: Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Responsable del tratamiento: Lorem, ipsum dolor sit amet consectetur adipisicing
+                                        elit.
                                         <br>
                                         Dirección del responsable: LReiciendis similique a praesentium quibusdam?
                                         <br>
-                                        Finalidad: Atque eius ullam quibusdam delectus nihil ratione sunt beatae, veniam repellat repudiandae sint commodi.
+                                        Finalidad: Atque eius ullam quibusdam delectus nihil ratione sunt beatae, veniam
+                                        repellat repudiandae sint commodi.
                                         <br>
-                                        Publicidad: Quos cumque officiis veritatis voluptates corrupti inventore quia necessitatibus molestias.
+                                        Publicidad: Quos cumque officiis veritatis voluptates corrupti inventore quia
+                                        necessitatibus molestias.
                                         <br>
-                                        Legitimación: Odit, vel nesciunt exercitationem, odio aut praesentium quibusdam culpa laboriosam voluptates magni architect.
+                                        Legitimación: Odit, vel nesciunt exercitationem, odio aut praesentium quibusdam
+                                        culpa laboriosam voluptates magni architect.
                                         <br>
-                                        Destinatarios: Fugiat quis, ullam dolore perferendis ipsum, aspernatur ipsa explicabo adipisci laboriosam est perspiciatis accusantium.
+                                        Destinatarios: Fugiat quis, ullam dolore perferendis ipsum, aspernatur ipsa
+                                        explicabo adipisci laboriosam est perspiciatis accusantium.
                                         <br>
-                                        Derechos: Id unde voluptate veniam sit laborum distinctio rem necessitatibus, vel cumque corporis. Ea autem inventore ullam! Harum culpa eos animi et corporis.
+                                        Derechos: Id unde voluptate veniam sit laborum distinctio rem necessitatibus,
+                                        vel cumque corporis. Ea autem inventore ullam! Harum culpa eos animi et
+                                        corporis.
                                         <br>
-                                        Información adicional: Mas información en el apartado <a href="datasegura.html">SUS DATOS SEGUROS</a> de nuestra página web.
+                                        Información adicional: Mas información en el apartado <a class="aSDS"
+                                            href="datasegura.html">SUS DATOS SEGUROS</a> de nuestra página web.
                                     </p>
                                 </article>
                                 <hr>
-                                <input type="checkbox"><label for="">Consiento el uso de mis datos para los fines indicados en la política de privacidad <a href="datasegura.html">SUS DATOS SEGUROS</a></label>
-                                <form action="">
-                                    Aquí va el formulario
-                                    <div class="enviar">
-                                        <p>
-                                            <input type="submit" value="ENVIAR">
-                                        </p>
-                                    </div>
-                                </form>
+                                <input type="checkbox"><span class="pri">Consiento el uso de mis datos para los fines
+                                    indicados en la política de privacidad <a class="aSDS" href="datasegura.html">sus
+                                        datos seguros</a></span>
+                                <div class="enviar">
+                                    <p>
+                                        <input type="submit" value="ENVIAR">
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -199,44 +255,51 @@
 
         <footer id="footer" class="site-footer" role="contentinfo">
             <div class="container">
-                <center><div class="menu-footer1">
-                    <ul id="menu1-footer" class="menu">
-                        <li><a href="#">Productos</a></li>
-                        <li><a href="promosper.html">Promociones</a></li>
-                        <li><a href="opinion.html">Opinión</a></li>
-                        <li><a href="franquincia.html">Franquicias</a></li>
-                        <li><a href="#">¡Suscríbite!</a></li>
-                    </ul>
-                </div></center>
-                <center><div class="menu-footer2">
-                    <ul id="menu2-footer" class="menu">
-                        <li><a href="avisolegal.html">Aviso Legal</a></li>
-                        <li><a href="datasegura.html">Sus datos seguros</a></li>
-                        <li><a href="politicapriv.html">Política de privacidad</a></li>
-                        <li><a href="politicacok.html">Política de cookies</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </div></center>
+                <center>
+                    <div class="menu-footer1">
+                        <ul id="menu1-footer" class="menu">
+                            <li><a href="#">Productos</a></li>
+                            <li><a href="promosper.html">Promociones</a></li>
+                            <li><a href="opinion.html">Opinión</a></li>
+                            <li><a href="franquincia.html">Franquicias</a></li>
+                            <li><a href="suscribete.html">¡Suscríbite!</a></li>
+                        </ul>
+                    </div>
+                </center>
+                <center>
+                    <div class="menu-footer2">
+                        <ul id="menu2-footer" class="menu">
+                            <li><a href="avisolegal.html">Aviso Legal</a></li>
+                            <li><a href="datasegura.html">Sus datos seguros</a></li>
+                            <li><a href="politicapriv.html">Política de privacidad</a></li>
+                            <li><a href="politicacok.html">Política de cookies</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                </center>
                 <p>&copy; 2019 MOTORCYCLE Todos los derechos reservados</p>
             </div>
         </footer>
     </div>
-    
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <!--SLIDESHOW-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script src="js/jquery.flexslider.js"></script>
     <script>
         // Can also be used with $(document).ready()
-        $(window).load(function() {
+        $(window).load(function () {
             $('.flexslider').flexslider({
                 animation: "slide"
             });
         });
     </script>
 </body>
+
 </html>

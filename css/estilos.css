@@ -99,7 +99,6 @@ nav#site-nav{ background: rgba(0, 200, 0, .5) }
 .casilla-item{
     width: 24rem;
     height: 27rem;
-    background: rgba(100, 50, 100, .5);
     padding: 1rem;
     margin-bottom: 3rem;
 }
@@ -132,13 +131,13 @@ a.test {
 .sector1 .casilla { justify-content: space-around; }
 
 .sector1 .sportm{
-    background: url(../img/sporm.jpg) no-repeat;
+    background: url(../img/sporm.jpg) no-repeat center;
     background-size: cover;
     background-position: center center;
 }
 
 .sector1 .crossm{
-    background: url(../img/crossm.jpg) no-repeat;
+    background: url(../img/crossm.jpg) no-repeat center;
     background-size: cover;
     background-position: center center;
 }
@@ -259,6 +258,14 @@ footer ul#menu2-footer li a{
 /*================================================================
     PRODUCTOS SPORT MOTORBIKE - PRODUCTOS CROSS COUNTRY MOTORBIKE
 ==================================================================*/
+.tituloSport{
+    background: url(../img/sporm.jpg) no-repeat center;
+}
+
+.tituloCross{
+    background: url(../img/crossm.jpg) no-repeat center;
+}
+
 .contSport .cjPromos .imgPromos, .contCross .cjPromos .imgPromos{ width: 100%; height: 60vh; background: rgba(200, 0, 200, .5); }
 
 .contSport .cjPromos .casilla-item-entrada, .contCross .cjPromos .casilla-item-entrada{ padding: 0rem; }
@@ -277,6 +284,10 @@ footer ul#menu2-footer li a{
         PROMOCIONES PERMANENTES - PROMOCIONES TEMPORALES
                             CUPONES 
 ============================================================*/
+.tituloProper{
+    background: url(../img/proper.jpg) no-repeat center;
+}
+
 .cassilla{ float: left; }
 
 .cjPromos{ padding: 1.25rem; }
@@ -304,7 +315,10 @@ footer ul#menu2-footer li a{
 /*===========================================================
                             OPINIÓN
 ============================================================*/
-.tituloOp{ margin-bottom: 2rem; }
+.tituloOp{ 
+    margin-bottom: 2rem; 
+    background: url(../img/backgroundos.png) no-repeat center;
+}
 
 .val{
     display: flex;
@@ -333,12 +347,33 @@ footer ul#menu2-footer li a{
     padding: 0 1.25rem;
 }
 
+.enviop{
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #2cb999;
+    padding: 5px 50px;
+    border: 0;
+    font-family: gobold;
+    font-size: 24px;
+    line-height: 28px;
+    border-radius: 3px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contOpcion{display: none;}
+
 /*===========================================================
                     QUIÉNES SOMOS-PRINCIPAL
 ============================================================*/
+.tituloQS {
+    background: url(../img/quieness.jpg) no-repeat center;
+}
+
 .tituloQS, .tituloQSH, .tituloQSV, .tituloPP, .tituloSDS, .tituloAL, .tituloProper, .tituloTemp, .tituloCupones, .tituloSport, .tituloCross, .tituloOp, .tituloSus{
     padding-left: 7.75rem;
-    background: rgba(200, 0, 0, 0.5);
+    /*background: rgba(200, 0, 0, 0.5);*/
     clip-path: polygon(0% 0%, 100% 0%, 100% 86%, 0% 100%);
     height: 60vh;
 }
@@ -378,6 +413,14 @@ footer ul#menu2-footer li a{
 
 /*      QUIÉNES SOMOS-HISTORIA - QUIENES SOMOS-VALORES
 ============================================================*/
+.tituloQSH {
+    background: url(../img/quienessh.jpg) no-repeat center;
+}
+
+.tituloQSV {
+    background: url(../img/quienessv.jpg) no-repeat center;
+}
+
 .contQSH article h3, .contQSV article h3{
     transform: none;
     font-size: 2.5rem;
@@ -395,7 +438,8 @@ footer ul#menu2-footer li a{
 ============================================================*/
 .tituloF{
     padding-left: 7.75rem;
-    background: rgba(200, 0, 0, 0.5);
+    /*background: rgba(200, 0, 0, 0.5);*/
+    background: url(../img/fraos.png) no-repeat center;
     clip-path: polygon(0% 0%, 100% 0%, 100% 86%, 0% 100%);
     height: 75vh;
     margin-bottom: 6rem;
@@ -449,7 +493,7 @@ footer ul#menu2-footer li a{
 
 .contF .cajaTitulo2 p{ font-size: 1.2rem; font-family: frabk; font-weight: bold; }
 
-.contF .enviar {
+.contF .enviar, .contSus .enviar{
     text-align: Center;
     color: #fff;
     display: block;
@@ -461,13 +505,14 @@ footer ul#menu2-footer li a{
     clip-path: polygon(0 14%,100% 0,100% 100%,0% 100%);
 }
 
-.contF input[type=submit] {
+.contF input[type=submit], .contSus input[type=submit] {
     display: inline-block;
     color: #4d3c72;
     background-color: #fff;
     padding: .3125rem 5rem;
     border: 0;
     font-size: 1.5rem;
+    font-family: gobold;
     border-radius: 3px;
     margin: 1.875rem 0rem;
 }
@@ -475,11 +520,82 @@ footer ul#menu2-footer li a{
 /*===========================================================
                         ¡SUSCRIBETE!
 ============================================================*/
-.contSus p{ font-family: Arial, Helvetica, sans-serif; }
+.tituloSus {
+    background: url(../img/suscribir.jpg) no-repeat center;
+}
 
-.contSus article{ font-size: .8rem; color: gray; }
+.num {
+    display: inline-block;
+    background-color: #4d3c72;
+    font-size: 24px;
+    -webkit-clip-path: polygon(0 14%,100% 3%,100% 100%,0% 100%);
+    clip-path: polygon(0 14%,100% 3%,100% 100%,0% 100%);
+    line-height: 38px;
+    color: #fff;
+    padding: 0 15px;
+    font-family: 'gobold';
+    margin-bottom: 10px;
+    margin-top: 30px;
+    clear: both;
+}
 
-.contSus article h4#info{
+.titlabel {
+    min-width: 85px;
+    color: #1a171b;
+    padding: 4px 0;
+    padding-right: 0px;
+    font-size: 15px;
+    line-height: 24px;
+    padding-right: 15px;
+    display: inline-block;
+    vertical-align: top;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-control { padding: 0; border: none; width: 65%; }
+
+.contSus .form-control, .contF .form-control, .contOpcion .form-control{ display: inline-block; }
+
+input[type=email], input[type=email]:focus, input[type=text], input[type=text]:focus, input[type=number], input[type=number]:focus, input[type=tel], input[type=tel]:focus, textarea {
+    line-height: 32px;
+    vertical-align: middle;
+    padding-right: 2.5em;
+    text-indent: .3em;
+    text-align: left;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #333;
+    outline: none;
+    background-color: #bcbdbe;
+    width: 100%;
+    font-size: 16px;
+    padding: 0;
+    font-family: 'gobold';
+}
+
+.barr { width: 40%; }
+
+.pri{ font-family: Arial, Helvetica, sans-serif; font-size: .9rem; color: gray; }
+
+input[type=checkbox]:not(old) {
+    width: 30px;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.contSus p, .contF p, .contOpcion p{ font-family: Arial, Helvetica, sans-serif; }
+
+.contSus .row p, .contF .row p, .contOpcion .row p{ margin: 1.5rem 0rem; }
+
+.contSus article, .contF article, .contOpcion article {
+    font-size: .8rem;
+    color: gray;
+}
+
+.infor{
     transform: none;
     text-align: left;
     color: #686868;
@@ -487,18 +603,22 @@ footer ul#menu2-footer li a{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.contSus article p a{
-    color: #5d1cd8;
+.aSDS {
+    color: #0f24c5;
     font-size: .8rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.contSus article p a:link{ text-decoration: underline; }
+.aSDS:link{ text-decoration: underline; }
 /*===========================================================
         POLITICA DE PRIVACIDAD - SUS DATOS SEGUROS
                         AVISO LEGAL
 ============================================================*/
 .contPp, .contSDS, .contAL, .contProper, .contTemp, .contCupones, .contSport, .contCross, .contOp, .contSus{ padding-left: 7.75rem; }
+
+.tituloAL, .tituloSDS, .tituloPP{
+    background: linear-gradient(45deg,#25949a 0%,#65bcaa 100%);
+}
 
 .contPp  article h3, .contSDS article h3, .contAL article h3{
     transform: none;
@@ -520,4 +640,46 @@ footer ul#menu2-footer li a{
     transform: none;
     margin-top: 0;
     line-height: 30px;
+}
+
+/*===========================================================
+                        MEDIAS QUERY
+============================================================*/
+
+@media (max-width: 767px) {
+    .header-movil {
+        display: block;
+        background-color: #010101;
+        position: fixed;
+        height: 40px;
+        z-index: 999;
+        width: 100%;
+    }
+
+    .header-movil h1, .header-movil .home {
+        display: block;
+        text-indent: -999px;
+        height: 40px;
+        width: 112px;
+        margin: 0 auto;
+        padding-top: 10px;
+        background: url(../img/logo1.png) no-repeat;
+        background-size: contain;
+    }
+
+    .header-movil .left {
+        position: absolute;
+        left: 20px;
+        width: 30px;
+        top: 10px;
+        text-align: center;
+    }
+
+    .header-movil .left a {
+        font-size: 18px;
+        color: #fff;
+        line-height: 18px;
+        font-family: gobold;
+        text-align: center;
+    }
 }

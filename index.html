@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--Require meta tags-->
     <meta charset="UTF-8">
@@ -9,7 +10,8 @@
     <meta name="author" content="Cookies Pex">
     <link rel="icon" href="img/motorcycle.png">
     <!--Bootstrao CSS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Style sheet-->
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -23,29 +25,41 @@
     <title>Motorcycle</title>
 
 </head>
+
 <body>
-    <div class="header-movil"></div>
+    <div class="header-movil">
+        <script>
+            $(function () { $(".toogle-menu").on("click", function () { $("body").toggleClass("open-menu"); }); });
+        </script>
+
+        <a href="index.html" class="home" rel="home"></a>
+        <!--<div class="left">
+            <a href="#" class="toogle-menu">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </a>
+        </div>-->
+    </div>
 
     <div id="page" class="site">
         <div id="supe-header">
             <div class="izq">
                 <ul>
                     <li><a href="https://www.facebook.com/" target="_blank">
-                        <i class="fa fa-facebook-square"></i>
-                    </a></li>
+                            <i class="fa fa-facebook-square"></i>
+                        </a></li>
                     <li><a href="https://www.instagram.com/" target="_blank">
-                        <i class="fa fa-instagram"></i>
-                    </a></li>
+                            <i class="fa fa-instagram"></i>
+                        </a></li>
                     <li><a href="https://www.twitter.com/" target="_blank">
-                        <i class="fa fa-twitter"></i>
-                    </a></li>
+                            <i class="fa fa-twitter"></i>
+                        </a></li>
                 </ul>
             </div>
 
             <div class="der">
                 <script>
                     /*$( function() {
-                        $(".abrir-menu").on("click", function() { 
+                        $(".abrir-menu").on("click", function() {
                             $("body").toggleClass( "menu-desplegado");
                         });
                     });  abrir-menu tiene que ir en li*/
@@ -68,15 +82,29 @@
                     <div class="widget-content">
                         <h3 class="widget-title"></h3>
                         <div class="netgo_navigation" id="netgo_navigation_netgo_navigation-3">
-                            <div class="menu-principla-container">
+                            <div class="menu-principal-container">
                                 <ul id="menu-principal" class="menu">
-                                    <a href="#"><li>PRODUCTOS</li></a>
-                                    <a href="promosper.html"><li>PROMOCIONES</li></a>
-                                    <a href="opinion.html"><li>OPINIÓN</li></a>
-                                    <a href="quienessomos.html"><li>QUIÉNES SOMOS</li></a>
-                                    <a href="franquincia.html"><li>FRANQUICIAS</li></a>
-                                    <a href="#"><li>EMPLEO</li></a>
-                                    <a href="suscribete.html"><li>¡SUSCRÍBETE!</li></a>
+                                    <a href="#">
+                                        <li>PRODUCTOS</li>
+                                    </a>
+                                    <a href="promosper.html">
+                                        <li>PROMOCIONES</li>
+                                    </a>
+                                    <a href="opinion.html">
+                                        <li>OPINIÓN</li>
+                                    </a>
+                                    <a href="quienessomos.html">
+                                        <li>QUIÉNES SOMOS</li>
+                                    </a>
+                                    <a href="franquincia.html">
+                                        <li>FRANQUICIAS</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>EMPLEO</li>
+                                    </a>
+                                    <a href="suscribete.html">
+                                        <li>¡SUSCRÍBETE!</li>
+                                    </a>
                                 </ul>
                             </div>
                         </div>
@@ -148,11 +176,15 @@
                                 <h1>PRODUCTOS</h1>
                                 <div class="casilla">
                                     <div class="casilla-item sportm">
-                                        <a href="prosport.html"><h3>SPORT MOTORBIKE</h3></a>
+                                        <a href="prosport.html">
+                                            <h3>SPORT MOTORBIKE</h3>
+                                        </a>
                                     </div>
 
                                     <div class="casilla-item crossm">
-                                        <a href="procross.html"><h3>CROSS COUNTRY MOTORBIKE</h3></a>
+                                        <a href="procross.html">
+                                            <h3>CROSS COUNTRY MOTORBIKE</h3>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -172,7 +204,9 @@
                                     </div>
 
                                     <div class="casilla-item">
-                                        <a href="promosper.html"><h3>PROMOS PERMANENTES</h3></a>
+                                        <a href="promosper.html">
+                                            <h3>PROMOS PERMANENTES</h3>
+                                        </a>
                                         <img src="" alt="">
                                         <p>Descubre las promociones permanentes de motorcycle</p>
                                     </div>
@@ -192,10 +226,14 @@
 
                         <div class="sector5">
                             <div class="medio izquierda">
-                                <a href="franquincia.html"><h3>FRANQUICIAS</h3></a>
+                                <a href="franquincia.html">
+                                    <h3>FRANQUICIAS</h3>
+                                </a>
                             </div>
                             <div class="medio derecha">
-                                <a href="#"><h3>EMPLEO</h3></a>
+                                <a href="#">
+                                    <h3>EMPLEO</h3>
+                                </a>
                             </div>
                         </div>
                     </article>
@@ -205,24 +243,28 @@
 
         <footer id="footer" class="site-footer" role="contentinfo">
             <div class="container">
-                <center><div class="menu-footer1">
-                    <ul id="menu1-footer" class="menu">
-                        <li><a href="#">Productos</a></li>
-                        <li><a href="promosper.html">Promociones</a></li>
-                        <li><a href="opinion.html">Opinión</a></li>
-                        <li><a href="franquincia.html">Franquicias</a></li>
-                        <li><a href="#">¡Suscríbite!</a></li>
-                    </ul>
-                </div></center>
-                <center><div class="menu-footer2">
-                    <ul id="menu2-footer" class="menu">
-                        <li><a href="avisolegal.html">Aviso Legal</a></li>
-                        <li><a href="datasegura.html">Sus datos seguros</a></li>
-                        <li><a href="politicapriv.html">Política de privacidad</a></li>
-                        <li><a href="politicacok.html">Política de cookies</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </div></center>
+                <center>
+                    <div class="menu-footer1">
+                        <ul id="menu1-footer" class="menu">
+                            <li><a href="#">Productos</a></li>
+                            <li><a href="promosper.html">Promociones</a></li>
+                            <li><a href="opinion.html">Opinión</a></li>
+                            <li><a href="franquincia.html">Franquicias</a></li>
+                            <li><a href="suscribete.html">¡Suscríbite!</a></li>
+                        </ul>
+                    </div>
+                </center>
+                <center>
+                    <div class="menu-footer2">
+                        <ul id="menu2-footer" class="menu">
+                            <li><a href="avisolegal.html">Aviso Legal</a></li>
+                            <li><a href="datasegura.html">Sus datos seguros</a></li>
+                            <li><a href="politicapriv.html">Política de privacidad</a></li>
+                            <li><a href="politicacok.html">Política de cookies</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                </center>
                 <p>&copy; 2019 MOTORCYCLE Todos los derechos reservados</p>
             </div>
         </footer>
@@ -230,19 +272,26 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <!--SLIDESHOW-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script src="js/jquery.flexslider.js"></script>
     <script>
         // Can also be used with $(document).ready()
-        $(window).load(function() {
+        $(window).load(function () {
             $('.flexslider').flexslider({
                 animation: "slide"
             });
         });
     </script>
 </body>
+
 </html>
